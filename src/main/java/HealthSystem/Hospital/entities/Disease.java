@@ -32,7 +32,7 @@ public class Disease {
 	@Column
 	private String diseaseBranch;
 	
-	@OneToMany(mappedBy="patient")
+	@OneToMany(mappedBy="disease")
 	private Set<Patient> patients;
 	
 	@OneToMany(mappedBy="disease")

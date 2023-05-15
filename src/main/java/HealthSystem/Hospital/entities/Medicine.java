@@ -32,7 +32,7 @@ public class Medicine {
 	private String serialNo;
 	
 	@Column
-	private String prescriptions;
+	private String madeIn;
 	
 	@OneToMany(mappedBy="medicine")
 	private Set<MedicineDisease> medicineDiseases;
